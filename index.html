@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="">
 <head>
 
     <title>Pokedex</title>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="icon"  type="image/x-icon"/>
     <meta name="description" content="Pokedex">
     <meta name="author" content="Daxterforce">
 
@@ -21,9 +21,9 @@
         rel="stylesheet"
 />
 <link rel="stylesheet" href="style.css" />
-</head>
 
-<body>
+
+
 
 <div class="logo">
     <img
@@ -34,7 +34,7 @@
 </div>
 
 <div class="search-container">
-    <input id="name-input" type="text" placeholder="Name / id" />
+    <label for="name-input"></label><input id="name-input" type="text" placeholder="Name / id" />
 
     <div id="search-btn" class="ball-container" onclick="searchPokemon();">
         <div class="upper-half-ball"></div>
@@ -155,22 +155,21 @@
         <!-- Top screen -->
         <div class="top-screen-container">
             <div id="about-screen" class="right-panel-screen">
-                Height: 70cm Weight: 6.9kg
+                <p class="stats__weight">
+                    weight: <span class="poke-weight"></span>
+                </p>
+                <p class="stats__height">
+                    height: <span class="poke-height"></span>
+                </p>
             </div>
         </div>
         <!-- Blue Buttons -->
         <div class="square-buttons-container">
             <div class="blue-squares-container">
-                <div class="blue-square"></div>
-                <div class="blue-square"></div>
-                <div class="blue-square"></div>
-                <div class="blue-square"></div>
-                <div class="blue-square"></div>
-                <div class="blue-square"></div>
-                <div class="blue-square"></div>
-                <div class="blue-square"></div>
-                <div class="blue-square"></div>
-                <div class="blue-square"></div>
+                <div id="move1" class="blue-square">Growl</div>
+                <div id="move2" class="blue-square">Tackle</div>
+                <div id="move3" class="blue-square">Vine Whip</div>
+                <div id="move4" class="blue-square">Growth</div>
             </div>
         </div>
         <!-- Center Buttons -->
@@ -184,9 +183,9 @@
                         <div class="dot light-red"></div>
                     </div>
                 </div>
-                <div class="white-squares-container">
-                    <div class="white-square"></div>
-                    <div class="white-square"></div>
+                <div class="white-squares-buttons">
+                    <button id="prevpoke" class="white-square"></button>
+                    <button id="nextpoke" class="white-square"></button>
                 </div>
             </div>
             <div class="center-right-container">
@@ -206,6 +205,5 @@
         </div>
     </div>
 </div>
-</body>
 </body>
 </html>

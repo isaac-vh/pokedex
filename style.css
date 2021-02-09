@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 
 :root {
     --main-bg-color: #fe0075;
@@ -308,7 +308,7 @@ input {
 .bottom-screen-lights .dot {
     height: 4px;
     width: 4px;
-    top: 2.5px;
+    top: 3px;
     left: 2px;
 }
 
@@ -357,7 +357,7 @@ input {
     width: 100%;
     font-family: 'Press Start 2P', cursive;
     text-align: center;
-    font-size: 8.5px;
+    font-size: 9px;
     overflow-wrap: break-word;
 }
 
@@ -370,7 +370,7 @@ input {
 
 .upper-buttons-container {
     display: flex;
-    align-items: top;
+    align-items: center;
     justify-content: start;
 }
 
@@ -440,18 +440,18 @@ input {
 }
 
 .border-top {
-    border-top: 3.5px solid var(--main-buttons-color);
+    border-top: 4px solid var(--main-buttons-color);
     position: absolute;
     top: -3px;
     left: 20px;
-    right: 19.5px;
+    right: 20px;
 }
 .border-bottom {
-    border-top: 3.5px solid var(--main-buttons-color);
+    border-top: 4px solid var(--main-buttons-color);
     position: absolute;
     top: 11px;
     left: 20px;
-    right: 19.5px;
+    right: 20px;
 }
 
 .bottom-right-nav-container {
@@ -475,10 +475,10 @@ input {
 }
 
 .bottom-right-nav-container .dot {
-    height: 2.5px;
-    width: 2.5px;
-    top: 1.5px;
-    left: 1.5px;
+    height: 3px;
+    width: 3px;
+    top: 2px;
+    left: 2px;
 }
 
 /* RIGHT PANEL */
@@ -493,9 +493,9 @@ input {
     grid-template-rows: 24% repeat(4, 19%);
     border-bottom: solid black 3px;
     border-bottom-right-radius: 10px;
+    pointer-events: all;
 }
 #right-panel::before {
-    content: '';
     position: absolute;
     left: -3px;
     bottom: 0;
@@ -513,7 +513,7 @@ input {
 .right-panel-screen {
     font-family: 'Press Start 2P', cursive;
     width: 146px;
-    height: 64px;
+    height: 70px;
     background-color: var(--secondary-screen-bg-color);
     border: solid black 2px;
     border-radius: 4px;
@@ -530,21 +530,27 @@ input {
 .square-buttons-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    pointer-events: all;
+    font-family: 'Press Start 2P', cursive;
+    font-size: xx-small;
+
 }
 
 .blue-squares-container {
     width: 146px;
     height: 60px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+
 }
 .blue-square {
     border-radius: 2px;
-    border: black 1.5px solid;
+    border: black 2px solid;
     background-color: var(--square-buttons-color);
     box-shadow: inset -2px -2px #3298cb;
+
 }
 
 /* center buttons */
@@ -570,23 +576,23 @@ input {
     margin-top: 10px;
 }
 .small-reds-container .dot {
-    height: 2.5px;
-    width: 2.5px;
+    height: 3px;
+    width: 3px;
     top: 1px;
     left: 1px;
 }
 
-.white-squares-container {
+.white-squares-buttons {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .white-square {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     border-radius: 5px;
-    border: black 2px solid;
+    border: black 3px solid;
     background-color: #ffffff;
     box-shadow: inset -2px -2px gray;
 }
