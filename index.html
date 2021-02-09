@@ -34,7 +34,7 @@
 </div>
 
 <div class="search-container">
-    <label for="name-input"></label><input id="name-input" type="text" placeholder="Name / id" />
+    <label for="name-input"></label><input id="name-input" type="text" placeholder="Name / id" value="bulbasaur"/>
 
     <div id="search-btn" class="ball-container" onclick="searchPokemon();">
         <div class="upper-half-ball"></div>
@@ -155,11 +155,11 @@
         <!-- Top screen -->
         <div class="top-screen-container">
             <div id="about-screen" class="right-panel-screen">
-                <p class="stats__weight">
-                    weight: <span class="poke-weight"></span>
+                <p class="stats__weight" id="stats__weight">
+                    weight:
                 </p>
-                <p class="stats__height">
-                    height: <span class="poke-height"></span>
+                <p class="stats__height" id="stats__height">
+                    height:
                 </p>
             </div>
         </div>
@@ -184,8 +184,8 @@
                     </div>
                 </div>
                 <div class="white-squares-buttons">
-                    <button id="prevpoke" class="white-square"></button>
-                    <button id="nextpoke" class="white-square"></button>
+                    <div id="prevpoke" class="white-square"> </div>
+                    <div id="nextpoke" class="white-square"> </div>
                 </div>
             </div>
             <div class="center-right-container">
@@ -205,5 +205,9 @@
         </div>
     </div>
 </div>
+
+<button onclick="nextPokemon()">Next Generation</button>
+<button onclick="prevPokemon()">Previous Gen</button>
+
 </body>
 </html>

@@ -1,1 +1,2 @@
 # pokedex
+design from Oryam
